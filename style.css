@@ -1,0 +1,76 @@
+body{
+    background: url("img2.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-size: 10vw;
+}
+.navbar .menu{
+    display: none;
+}
+.navbar{
+    /* list-style-type: none;
+    margin: 0;
+    padding: 0; */
+    overflow: hidden;
+    background-color: #333;
+}
+/* .navbar li{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+} */
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #111;
+}
+.navbar a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+.intro{
+    font-size: 1.8vw;
+    color: rgb(66, 252, 91);
+    text-shadow: 4px 4px rgba(180, 252, 147, 0.178);
+    font-family: 'elephant';
+    float: right;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 20px;
+    /* margin: 10px 140px; */
+    margin-right: 10px;
+}
+/* .intro h1 span{
+    text-shadow: 2px 3px rgb(14, 139, 3);
+} */
+@media screen and (max-width: 900px){
+    .navbar a:not(:first-child){
+        display: none;
+    }
+    .navbar a.menu{
+        display: block;
+        float: right;
+    }
+    .navbar.responsive{
+        position: relative;
+    }
+    .navbar.responsive a.menu{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

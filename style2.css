@@ -1,0 +1,90 @@
+.navbar .menu{
+    display: none;
+}
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #111;
+}
+.navbar a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+.heading h1{
+    display: flex;
+    flex-direction: row;
+}
+.heading h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 5px solid #000;
+    margin: auto;
+}
+.heading h1:before {
+    margin-right: 10px
+}
+.heading h1:after {
+    margin-left: 10px
+}
+.f2{
+    color: rgb(41, 245, 41);
+}
+.heading h1{
+    font-size: 3vw;
+    font-family: 'arial';
+}
+.intro{
+    display: flex;
+    flex-wrap: 50%;
+    gap: 40px;
+    margin:20px;
+}
+.img img{
+    height:400px;
+    width:400px;
+    margin: auto;
+    padding: 20px;
+    transform: rotate3d(1, 1, 1, -10deg);
+}
+.p p{
+    /* height:200px;
+    width:200px;
+    margin: auto; */
+    font-size: 2vw;
+    font-family: 'Comic sans MS';
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width: 900px){
+    .navbar a:not(:first-child){
+        display: none;
+    }
+    .navbar a.menu{
+        display: block;
+        float: right;
+    }
+    .navbar.responsive{
+        position: relative;
+    }
+    .navbar.responsive a.menu{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
